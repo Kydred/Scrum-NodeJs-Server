@@ -1,0 +1,21 @@
+{
+  "name": "nodejsmongo",
+  "version": "1.0.0",
+  "description": "empty",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "test"
+  },
+  "author": "Thinh.bitech",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.2"
+  }
+}
