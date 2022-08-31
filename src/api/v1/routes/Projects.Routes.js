@@ -1,4 +1,6 @@
-module.exports = app => {
+var { expressjwt: jwt } = require("express-jwt");
+
+module.exports = (app, auth) => {
     const projectCtrl = require("../controllers/Projects.controller.js");
   
     var router = require("express").Router();
@@ -7,7 +9,7 @@ module.exports = app => {
     router.post("/", projectCtrl.create);
   
     // Retrieve all Tutorials
-    router.get("/", projectCtrl.findAll);
+    router.get("/", auth, projectCtrl.findAll);
   
     // Retrieve all published Tutorials
     router.get("/published", projectCtrl.findAllPublished);

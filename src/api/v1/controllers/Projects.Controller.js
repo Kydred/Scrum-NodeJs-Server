@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require.main.require("./src/config/databaseModels");
 const Project = db.Projects;
 
 exports.create = (req, res) => {
