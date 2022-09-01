@@ -2,9 +2,23 @@ module.exports = mongoose => {
     // định nghĩa cấu trúc bảng
     var schema = mongoose.Schema(
       {
-        title: String,
-        description: String,
-        published: Boolean
+        Id_Project: String,
+        Id_Sprint: String,
+        Id_Status: String, //FlowStatus
+        Id_Reporter: String,
+        Id_Parrent: String,
+        Summary: String,
+        Desciption: String,
+        Assignee: [String],
+        Label: [String],
+        Point: Number,
+        Est_time: Number,
+        Work_time_start: Date,
+        Work_time_end: Date,
+        Work_time_break: Number,
+        Attach_files: [String],
+        Id_IssueType: String,
+        Progress: mongoose.Schema.Types.Decimal128
       },
       { timestamps: true }
     );

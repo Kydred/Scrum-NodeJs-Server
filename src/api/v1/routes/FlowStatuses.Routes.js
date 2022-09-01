@@ -1,7 +1,7 @@
 var { expressjwt: jwt } = require("express-jwt");
 
 module.exports = (app, auth) => {
-    const ctrl = require("../controllers/Tasks.controller.js");
+    const ctrl = require("../controllers/FlowStatuses.controller.js");
   
     var router = require("express").Router();
   
@@ -17,5 +17,5 @@ module.exports = (app, auth) => {
     // // Create a new Tutorial
     // router.delete("/", ctrl.deleteAll);
   
-    app.use("/api/tasks", router);
+    app.use("/api/flowstatuses", router);
   };

@@ -1,21 +1,10 @@
 // https://mongoosejs.com/docs/schematypes.html
 
-// export const ProjectTypes = Object.freeze({
-//   "Scrum":0,
-//   "BugTracking":1,
-//   "TaskTracking":2
-// });
-
 module.exports = mongoose => {
   // định nghĩa cấu trúc bảng
   var schema = mongoose.Schema(
     {
-      Name: String,
-      Key: String,
-      Type: Number,
-      Leader: String,
-      Category: String,
-      Permissions: [String]
+      Name: String
     },
     { timestamps: true }
   );
@@ -26,6 +15,6 @@ module.exports = mongoose => {
     return object;
   });
 
-  const Projects = mongoose.model("Projects", schema);
+  const Projects = mongoose.model("Categories", schema);
   return Projects;
 };

@@ -1,15 +1,25 @@
+Category - Name
+
 Project - name, key, type, lead, Category, permission
 
-Sprint, Backlog - name, time start, end, goal, id_project
+ProjectBoards - Id_prpject, Name, FlowStatus
 
-Task - Summary, Desciption (image, link, file), Assignee, label, id_sprint, id_project, Point, est_time, work_time_start, work_time_end, work_time_break, reporter, attach_files, type, id_parrent, status, progress.
+Sprint, Backlog - name, time-start, time-end, time-plan, goal, id_project
 
-User - name, email, avatar
+FlowStatus - Name, ECategory
 
-User_project - id_user, id_project
+IssueType - Name, Desciption, Icon
+
+Task - Summary, Desciption (image, link, file), Assignee, label, id_sprint, id_project, Point, est_time, work_time_start, work_time_end, work_time_break, reporter, attach_files, issue type, id_parrent, status, progress.
 
 TaskLogs - Id_task, action, target, before, after
 
 TaskComments - Id_task, id_user, Content, attach_files
+
+-----
+
+User - name, email, avatar
+
+User_project - id_user, id_project
 
 Notification - Id_user, Id_task, summary
